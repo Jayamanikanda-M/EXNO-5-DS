@@ -78,13 +78,13 @@ plt.xlabel('x - axis')
 plt.ylabel('y - axis')
 plt.title('Some cool customizations!')
 plt.show()
-# Single series
+
 years = [2010, 2011, 2012, 2013, 2014, 2015]
 yield_apples = [0.895, 0.91, 0.919, 0.926, 0.929, 0.931]
 plt.plot(years, yield_apples)
 plt.show()
 
-# Multi-series with markers
+
 years = range(2000, 2012)
 apples = [0.895, 0.91, 0.919, 0.926, 0.929, 0.931, 0.934, 0.936, 0.937, 0.9375, 0.9372, 0.939]
 oranges = [0.962, 0.941, 0.930, 0.923, 0.918, 0.908, 0.907, 0.904, 0.901, 0.898, 0.9, 0.896]
@@ -166,7 +166,7 @@ plt.fill_between(x, y2, color='green')
 plt.legend(['y1', 'y2'])
 plt.show()
 
-# Stackplot variant
+
 plt.stackplot(x, y1, y2, y3, labels=['Line 1', 'Line 2', 'Line 3'])
 plt.legend(loc='upper left')
 plt.title('Stacked Line Chart')
@@ -259,7 +259,7 @@ plt.title('Sales Distribution with Outlier')
 plt.ylabel('Sales')
 plt.show()
 
-# With mean marker
+
 plt.boxplot(sales, showmeans=True)
 plt.title('Sales Distribution')
 plt.ylabel('Sales')
@@ -268,14 +268,12 @@ laptop = [120, 135, 150, 145, 170, 180, 190, 175, 200]
 mobile = [200, 220, 210, 240, 260, 270, 290, 300, 310]
 tablet = [80, 90, 100, 95, 110, 120, 130, 125, 140]
 
-# Vertical
 plt.boxplot([laptop, mobile, tablet], labels=['Laptop', 'Mobile', 'Tablet'])
 plt.title('Sales Distribution by Product')
 plt.xlabel('Product')
 plt.ylabel('Units Sold')
 plt.show()
 
-# Horizontal
 plt.boxplot([laptop, mobile, tablet], labels=['Laptop', 'Mobile', 'Tablet'], vert=False)
 plt.title('Sales Distribution by Product')
 plt.xlabel('Units Sold')
@@ -340,7 +338,7 @@ y_values = [0, 1, 4, 9, 16, 25]
 plt.plot(x_values, y_values)
 plt.show()
 
-# 2D curve with NumPy arange
+
 x = np.arange(0, 10)
 y = x * x
 plt.plot(x, y, 'g*', linestyle='dashed', linewidth=2, markersize=12)
@@ -348,13 +346,14 @@ plt.xlabel('X axis')
 plt.ylabel('Y axis')
 plt.title('2d Diagram')
 plt.show()
-# Simple line from points
+
+
 x_values = [0, 1, 2, 3, 4, 5]
 y_values = [0, 1, 4, 9, 16, 25]
 plt.plot(x_values, y_values)
 plt.show()
 
-# 2D curve with NumPy arange
+
 x = np.arange(0, 10)
 y = x * x
 plt.plot(x, y, 'g*', linestyle='dashed', linewidth=2, markersize=12)
@@ -371,7 +370,7 @@ plt.ylabel('Y axis')
 plt.title('Graph in 2D')
 plt.savefig('Test.png')
 
-# Scatter with star markers and legend
+
 x = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 y = [2, 4, 5, 7, 6, 8, 9, 11, 12, 12]
 plt.scatter(x, y, label="stars", color="green", marker="*", s=30)
@@ -383,11 +382,11 @@ plt.show()
 values = [5, 6, 3, 7, 2]
 names = ["A", "B", "C", "D", "E"]
 
-# Vertical bar chart
+
 plt.bar(names, values, color="green")
 plt.show()
 
-# Horizontal bar chart
+
 plt.barh(names, values, color="yellowgreen")
 plt.show()
 x = [2, 1, 6, 4, 2, 4, 8, 9, 4, 2, 4, 10, 6, 4, 5, 7, 7, 3, 2, 7, 5, 3, 5, 9, 2, 1]
